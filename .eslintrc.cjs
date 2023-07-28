@@ -34,6 +34,9 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'class-methods-use-this': 'off',
     'prefer-destructuring': ['error', { object: true, array: false }],
-    'no-unused-vars': ['error', { argsIgnorePattern: 'req|res|next|val' }]
+    'no-unused-vars': ['error', { argsIgnorePattern: 'req|res|next|val' }],
+    'vue/multi-word-component-names': 0,
+    'import/no-unresolved': 'off',
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }]
   }
 }
