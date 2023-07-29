@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .my-btn {
+    @apply relative inline-flex justify-center items-center box-border font-normal leading-relaxed whitespace-nowrap outline-none cursor-pointer select-none;
+  }
+
+  /* type */
+  .my-btn.my-btn-type-primary {
+    @apply text-white bg-violet-600 border border-transparent;
+  }
+
+  .my-btn.my-btn-type-secondary {
+    @apply text-neutral-800 bg-neutral-200 border border-transparent;
+  }
+
+  .my-btn.my-btn-type-dashed {
+    @apply text-neutral-800 bg-neutral-200 border border-neutral-300;
+  }
+
+  .my-btn.my-btn-type-outline {
+    @apply text-violet-600 bg-transparent border border-violet-600;
+  }
+
+  .my-btn.my-btn-type-text {
+    @apply text-violet-600 bg-transparent border border-transparent;
+  }
+
+  /* size */
+  .my-btn.my-btn-size-mini {
+    @apply h-6 px-3 text-xs rounded-sm;
+  }
+
+  .my-btn.my-btn-size-small {
+    @apply h-7 px-4 text-sm rounded-sm;
+  }
+
+  .my-btn.my-btn-size-medium {
+    @apply h-8 px-4 text-sm rounded-sm;
+  }
+
+  .my-btn.my-btn-size-large {
+    @apply h-8 px-5 text-sm rounded-sm;
+  }
+}
