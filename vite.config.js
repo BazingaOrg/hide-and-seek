@@ -12,5 +12,21 @@ export default defineConfig({
       '@': resolve(__dirname, './src')
     }
   },
-  plugins: [vue()]
+  plugins: [vue()],
+  css: {
+    preprocessorOptions: {
+      less: {
+        modifyVars: {
+          'arcoblue-1': '#F5E8FF',
+          'arcoblue-2': '#DDBEF6',
+          'arcoblue-3': '#C396ED',
+          'arcoblue-4': '#A871E3',
+          'arcoblue-5': '#8D4EDA',
+          'arcoblue-6': '#722ED1',
+          'arcoblue-7': '#551DB0'
+        },
+        javascriptEnabled: true
+      }
+    }
+  }
 })
