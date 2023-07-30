@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex justify-center items-center w-full h-full bg-gradient-to-b from-violet-50 to-fuchsia-200"
+    class="flex justify-center items-center w-full h-full bg-gradient-to-b from-violet-50 to-violet-200"
   >
     <div
       class="box-border flex justify-between w-full sm:w-[545px] md:w-[545px] lg:w-[785px] sm:h-[480px] h-full sm:p-8 p-4 rounded-md shadow-md bg-white"
@@ -8,7 +8,7 @@
     >
       <div class="box-border w-full lg:w-[415px] h-full p-2">
         <img
-          class="mx-auto h-20 w-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125 duration-700"
+          class="mx-auto h-20 w-auto animate-bounce"
           src="~@/assets/images/logo.png"
           alt="logo"
         />
@@ -74,12 +74,15 @@
       <div
         class="box-border w-[240px] h-full p-2 hidden lg:flex flex-col justify-center items-center"
       >
-        <canvas class="w-44 h-44" ref="loginQRCode"></canvas>
+        <canvas
+          class="w-44 h-44 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125 duration-700"
+          ref="loginQRCode"
+        ></canvas>
         <h2 class="mt-4 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
           通过二维码登录
         </h2>
         <div class="text-center text-gray-500">
-          通过 <strong>手机 APP</strong> 扫描二维码，便可即时登录。
+          通过 <strong>藏猫猫小程序</strong> 扫描二维码，便可即时登录。
         </div>
       </div>
     </div>
@@ -87,11 +90,7 @@
       class="box-border flex flex-col w-full h-full sm:w-[486px] sm:h-[620px] sm:p-8 p-4 rounded-md shadow-md bg-white"
       v-show="loginOrRegister === 'register'"
     >
-      <img
-        class="mx-auto h-20 w-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125 duration-700"
-        src="~@/assets/images/logo.png"
-        alt="logo"
-      />
+      <img class="mx-auto h-20 w-auto animate-bounce" src="~@/assets/images/logo.png" alt="logo" />
       <h2 class="text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
         创建一个账号
       </h2>
@@ -167,9 +166,8 @@
           <a-button type="primary" long html-type="submit">注册</a-button>
           <template #extra>
             <p class="text-center text-sm text-gray-500">
-              进行注册即表示您同意藏猫猫的<a-link href="#">服务条款</a-link>和<a-link href="#"
-                >隐私政策</a-link
-              >
+              进行注册即表示您同意 <strong>藏猫猫</strong> 的<a-link href="#">服务条款</a-link
+              >和<a-link href="#">隐私政策</a-link>
             </p>
           </template>
         </a-form-item>
