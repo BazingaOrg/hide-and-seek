@@ -3,7 +3,7 @@
     class="flex justify-center items-center w-full h-full bg-gradient-to-b from-violet-50 to-violet-200"
   >
     <div
-      class="box-border flex justify-between w-full sm:w-[545px] md:w-[545px] lg:w-[785px] sm:h-[480px] h-full sm:p-8 p-4 rounded-md shadow-md bg-white"
+      class="animate-[wobble-hor-bottom_.8s] box-border flex justify-between w-full sm:w-[545px] md:w-[545px] lg:w-[785px] sm:h-[480px] h-full sm:p-8 p-4 rounded-md shadow-md bg-white"
       v-show="loginOrRegister === 'login'"
     >
       <div class="box-border w-full lg:w-[415px] h-full p-2">
@@ -87,7 +87,7 @@
       </div>
     </div>
     <div
-      class="box-border flex flex-col w-full h-full sm:w-[486px] sm:h-[620px] sm:p-8 p-4 rounded-md shadow-md bg-white"
+      class="animate-[wobble-hor-bottom_.8s] box-border flex flex-col w-full h-full sm:w-[486px] sm:h-[620px] sm:p-8 p-4 rounded-md shadow-md bg-white"
       v-show="loginOrRegister === 'register'"
     >
       <img class="mx-auto h-20 w-auto animate-bounce" src="~@/assets/images/logo.png" alt="logo" />
