@@ -12,27 +12,27 @@ import javax.validation.constraints.NotNull;
 public class UserModifyDto {
 
     @NotNull(message = "用户ID不能为空！")
-    @ApiModelProperty(name = "用户ID", required = true)
+    @ApiModelProperty(value = "用户ID", required = true)
     private Integer id;
 
     @NotEmpty(message = "用户名不能为空！")
-    @ApiModelProperty(name = "用户名", required = true)
+    @ApiModelProperty(value = "用户名", required = true)
     private String username;
 
     @NotEmpty(message = "密码不能为空！")
-    @ApiModelProperty(name = "密码", required = true)
+    @ApiModelProperty(value = "密码", required = true)
     private String password;
 
     @NotEmpty(message = "电子邮件不能为空！")
-    @ApiModelProperty(name = "电子邮件", required = true)
+    @ApiModelProperty(value = "电子邮件", required = true)
     private String email;
 
     @NotEmpty(message = "名字不能为空！")
-    @ApiModelProperty(name = "名字", required = true)
+    @ApiModelProperty(value = "名字", required = true)
     private String firstName;
 
     @NotEmpty(message = "姓氏不能为空！")
-    @ApiModelProperty(name = "姓氏", required = true)
+    @ApiModelProperty(value = "姓氏", required = true)
     private String lastName;
 
     @ApiModelProperty("电话号码")
