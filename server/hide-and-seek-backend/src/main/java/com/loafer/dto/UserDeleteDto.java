@@ -11,10 +11,10 @@ import javax.validation.constraints.NotEmpty;
 public class UserDeleteDto {
 
     @NotEmpty(message = "邮箱不能为空！")
-    @ApiModelProperty(name = "邮箱", required = true)
+    @ApiModelProperty(value = "邮箱", required = true)
     private String email;
 
     @NotEmpty(message = "密码不能为空！")
-    @ApiModelProperty(name = "密码", required = true)
+    @ApiModelProperty(value = "密码", required = true)
     private String password;
 }
