@@ -3,6 +3,10 @@ export default {
   darkMode: 'class',
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
+    fontFamily: {
+      display: ['Pally', 'Comic Sans MS', 'sans-serif'],
+      body: ['Pally', 'Comic Sans MS', 'sans-serif']
+    },
     extend: {
       animation: {
         wobbleHorBottom: 'wobble-hor-bottom .8s'
